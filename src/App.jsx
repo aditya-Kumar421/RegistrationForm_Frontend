@@ -5,6 +5,7 @@ import Form from './components/Form';
 import SuccessPage from './components/SuccessPage';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import Data from './components/Data';
 
 
 const App = () => {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/success",
     element: <SuccessPage />,
+  },
+  {
+    path: "/registeredUserData",
+    element: <Data />,
   },
   ]);
   return (
