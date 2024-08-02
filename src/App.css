@@ -1,0 +1,79 @@
+html{
+    background-color: rgba(114, 114, 193, 0.802);
+}
+#root{
+    background-color: rgba(114, 114, 193, 0.802);
+}
+.header{
+    text-align: center;
+    margin-top: 4vh;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+    margin:4vh auto;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+    border:1px solid rgb(215, 181, 181);
+    border-radius: 10px;
+    padding:40px;
+    background-color: rgba(255, 255, 255, 0.553);
+}
+.labelText{
+    font-weight: 500;
+}
+    
+.submit-btn{
+    min-width: 15%;
+    padding:15px 30px;
+    margin-top: 15px;
+    /* margin: 0 auto; */
+}
+.inputField{
+    width:30vw;
+}
+.thanks-container{
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.thanksImg{
+    width:60%;
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .inputField{
+        width:80vw;
+    }
+}
+
+/* Tablets (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: 80%;
+        padding: 30px;
+    }
+    .inputField{
+        width:50vw;
+    }
+}
+
+/* Laptops (1025px and up) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 60%;
+        padding: 40px;
+    }
+    .inputField{
+        width:30vw;
+    }
+}
