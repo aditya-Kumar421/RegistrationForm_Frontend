@@ -39,7 +39,7 @@ const Form = () => {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/form/register/",
+        `${import.meta.env.VITE_API_BASE_URL}/form/register/`,
         {
           ...formData,
           captcha: captchaValue,
