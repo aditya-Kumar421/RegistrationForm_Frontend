@@ -12,7 +12,7 @@ const SuccessPage = () => {
       {imageLoaded ? (
         <img 
           className="thanksImg" 
-          src="../src/assets/ThankYouImg.webp" 
+          src="https://i.ibb.co/0r4275m/Thank-You-Img.webp" 
           alt="Thanks" 
           onError={handleImageError}
         />
