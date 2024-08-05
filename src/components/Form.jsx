@@ -64,7 +64,7 @@ const Form = () => {
         navigate("/success");
       }, 2000);
     } catch (error) {
-      toast.error(error.message || "Registration failed!");
+      toast.error(error.response.data.error || "Registration failed!");
     }
   };
 
