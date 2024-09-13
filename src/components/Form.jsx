@@ -13,6 +13,7 @@ const Form = () => {
     section: "",
     email: "",
     phone_number: "",
+    residence:"",
     hackerRank_username: "",
   });
 
@@ -55,6 +56,7 @@ const Form = () => {
         email: "",
         phone_number: "",
         hackerRank_username: "",
+        residence:"",
       });
 
       setCaptchaValue(null);
@@ -96,7 +98,7 @@ const Form = () => {
         <div  className="mb-3">
           <label className="form-label labelText">Branch:</label>
           <select name="branch"  className="form-control inputField"  value={formData.branch} onChange={handleChange}>
-            <option value="">Select Branch</option>
+            <option value="">--choose branch--</option>
             <option value="CSE">CSE</option>
             <option value="CS">CS</option>
             <option value="CSE(AIML)">CSE(AIML)</option>
@@ -119,27 +121,10 @@ const Form = () => {
             value={formData.section}
             onChange={handleChange}
           >
-            <option value="">Select Section</option>
+            <option value="">--choose section--</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            <option value="13">13</option>
-            <option value="14">14</option>
-            <option value="15">15</option>
-            <option value="16">16</option>
-            <option value="17">17</option>
-            <option value="18">18</option>
-            <option value="19">19</option>
-            <option value="20">20</option>
           </select>
         </div >
         <div  className="mb-3">
@@ -164,6 +149,19 @@ const Form = () => {
             value={formData.phone_number}
             onChange={handleChange}
           />
+        </div >
+        <div  className="mb-3">
+          <label className="form-label labelText">Residence:</label>
+          <select
+            name="residence"
+            className="form-control inputField" 
+            value={formData.residence}
+            onChange={handleChange}
+          >
+            <option value="">--choose residence--</option>
+            <option value="1">Hostler</option>
+            <option value="2">Day Scholar</option>
+          </select>
         </div >
         <div  className="mb-3">
           <label className="form-label labelText">Hacker Rank Username:</label>
