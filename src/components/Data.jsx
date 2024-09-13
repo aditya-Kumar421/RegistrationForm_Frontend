@@ -33,6 +33,7 @@ const Data = () => {
                         <th>Email</th>
                         <th>Phone Number</th>
                         <th>HackerRank Username</th>
+                        <th>Residence</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -46,6 +47,7 @@ const Data = () => {
                             <td>{item.email}</td>
                             <td>{item.phone_number}</td>
                             <td>{item.hackerRank_username}</td>
+                            <td>{item.residence}</td>
                         </tr>
                     ))}
                 </tbody>
